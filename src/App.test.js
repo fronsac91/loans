@@ -17,14 +17,3 @@ describe("LendInvest loans <App/>", () => {
   });
 
 });
-
-
-//describe("Loans <App/>", () => {
-//  it("should display the correct balance", () => {
-//    const wrapper = mount(<App />);
-//    expect(
-//      wrapper.find("#balance").text()
-//    )
-//    .toEqual("");
-//  });
-//});
