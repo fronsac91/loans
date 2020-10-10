@@ -8,7 +8,7 @@ import LoanModal from '../../components/LoanModal/LoanModal';
 import { numberWithCommas } from '../../utility/numberWithCommas';
 
 const Container = styled.div`
-  width: 400px;
+  width: 500px;
   margin: auto;
   color: #333d45;
 `;

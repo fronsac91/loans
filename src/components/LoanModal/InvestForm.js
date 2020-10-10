@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { connect } from "react-redux";
 import styled from 'styled-components';
 
@@ -19,6 +19,12 @@ const AmountInput = styled.input`
 
 const InvestForm = (props) => {
   const [value, setValue] = useState("");
+  const focusInputRef = useRef(null);
+
+  useEffect(() => {
+    focusInputRef.current.focus();
+  }, []);
+
 
   const onChange = (e) => {
     const isEmpty = e.target.value === '';
@@ -43,7 +49,7 @@ const InvestForm = (props) => {
       <p>Investment amount (£)</p>
   
       <CtaContainer>
-        <AmountInput type="text" value={value} onChange={onChange} />
+        <AmountInput ref={focusInputRef} type="text" value={value} onChange={onChange} />
         <Button isSubmit={true}>INVEST</Button>
       </CtaContainer>
     </form>

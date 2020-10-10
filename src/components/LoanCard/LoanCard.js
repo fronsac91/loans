@@ -33,6 +33,7 @@ const CardBody = styled.div`
   const CardCtaBox = styled.div`
     width: 30%;
     align-self: flex-end;
+    text-align: right;
   `;
 
     const InvestedLabel = styled.p`

@@ -8,11 +8,11 @@ const StyledModal = styled.div`
   right: 0;
   left: 0;
   margin: 0 auto;
-  top: 30%;
+  top: 20%;
 
   box-sizing: border-box;
   padding: 16px;
-  width: 300px;
+  width: 350px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px black;
 
