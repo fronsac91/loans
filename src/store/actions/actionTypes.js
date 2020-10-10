@@ -1,2 +1,1 @@
-export const SELECT_LOAN_ITEM = 'SELECT_LOAN_ITEM';
 export const INVEST_AMOUNT = 'INVEST_AMOUNT';

@@ -1,9 +1,8 @@
 import * as actionTypes from './actionTypes';
 
-export const investAmount = (loanId, amount) => {
+export const investAmount = (amount) => {
   return {
     type: actionTypes.INVEST_AMOUNT,
-    loanId,
     amount
   }
 };

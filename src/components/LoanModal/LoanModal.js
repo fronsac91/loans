@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Modal from '../../components/UI/Modal/Modal';
+import InvestForm from '../LoanModal/InvestForm';
 import { convertSecIntoDays } from '../../utility/diffDates';
 import { numberWithCommas } from '../../utility/numberWithCommas';
 
@@ -46,6 +47,7 @@ const LoanModal = ({loan, closeModal}) => {
         <Available>Available: £{numberWithCommas(loan.available)}</Available>
         <LoanEnds>Loan ends in: {convertSecIntoDays(loan.term_remaining)}</LoanEnds>
 
+        <InvestForm loan={loan} closeModal={closeModal}/>
       </Content>
     </Modal>
 

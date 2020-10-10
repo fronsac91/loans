@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Backdrop from '../Backdrop/Backdrop';
 
-const StyledModal = styled.button`
+const StyledModal = styled.div`
   position: fixed;
   right: 0;
   left: 0;
