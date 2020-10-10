@@ -39,13 +39,13 @@ const LoanCard = (props) => {
       <CardHeader>{props.loan.title}</CardHeader>
       <CardBody>
         <CardContentBox>
-          <LoanInfo class="tranche">Tranche: {props.loan.tranche}</LoanInfo>
+          <LoanInfo>Tranche: {props.loan.tranche}</LoanInfo>
           <LoanInfo>Annualized return: {props.loan.annualised_return}</LoanInfo>
           <LoanInfo>LTV: {props.loan.ltv}</LoanInfo>
         </CardContentBox>
   
         <CardCtaBox>
-          <Button>INVEST</Button>
+          <Button clicked={props.clicked}>INVEST</Button>
         </CardCtaBox>
       </CardBody>
     </CardContainer>

@@ -14,7 +14,7 @@ const StyledButton = styled.button`
 `;
 
 const Button = (props) => (
-  <StyledButton>INVEST</StyledButton>
+  <StyledButton onClick={props.clicked}>INVEST</StyledButton>
 );
 
 export default Button;
