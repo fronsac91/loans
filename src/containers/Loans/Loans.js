@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 
+import LoanCard from '../../components/LoanCard/LoanCard';
+
 import { numberWithCommas } from '../../utility/numberWithCommas';
 
 const Container = styled.div`
@@ -23,6 +25,10 @@ const Loans = (props) => {
     <Container>
       <Header>Current Loans</Header>
 
+      {props.loans.map(loan => 
+        <LoanCard loan={loan} key={loan.id} />
+      )}
+
       <Balance data-testid="balance">
         Total amount available for investments: <strong>£{numberWithCommas(props.balance)}</strong>
       </Balance>
@@ -32,6 +38,7 @@ const Loans = (props) => {
 
 const mapStateToProps = state => {
   return {
+    loans: state.loans,
     balance: state.balance
   };
 };
