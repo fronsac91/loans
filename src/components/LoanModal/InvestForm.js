@@ -32,7 +32,7 @@ const InvestForm = (props) => {
 
   const investAmount = (event) => {
     event.preventDefault();
-    props.investAmount(parseInt(value));
+    props.investAmount(props.loan.id, parseInt(value));
 
     props.closeModal();
   }
@@ -57,7 +57,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    investAmount: (amount) => dispatch(actions.investAmount(amount))
+    investAmount: (loanId, amount) => dispatch(actions.investAmount(loanId, amount))
   }
 }
 
