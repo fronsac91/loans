@@ -24,8 +24,9 @@ const InvestForm = (props) => {
     const isEmpty = e.target.value === '';
     const isNumeric = /^[0-9\b]+$/.test(e.target.value);
     const isWithinBalance = e.target.value <= props.balance;
+    const isWithinAvailable = e.target.value <= props.loan.available;
 
-    if (isEmpty || ( isNumeric && isWithinBalance)) {
+    if (isEmpty || ( isNumeric && isWithinBalance && isWithinAvailable)) {
       setValue(e.target.value);
     }
   }

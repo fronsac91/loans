@@ -54,7 +54,7 @@ describe('LendInvest reducer', () => {
           "id": "12",
           "title": "Dolores repudiandae ut voluptas unde laborum quaerat et sapiente.",
           "tranche": "C",
-          "available": 22359,
+          "available": 2359,
           "annualised_return": "4.80",
           "term_remaining": 879000,
           "ltv": "48.80",
@@ -81,7 +81,7 @@ describe('LendInvest reducer', () => {
 
     it('should update history item', () => {
       const loanId = "12";
-      const amount = 10000;
+      const amount = 2000;
 
       const exampleAmountToBeUpdated = 800;
       const exampleState = {
@@ -115,7 +115,7 @@ describe('LendInvest reducer', () => {
           "id": "12",
           "title": "Dolores repudiandae ut voluptas unde laborum quaerat et sapiente.",
           "tranche": "C",
-          "available": 22359,
+          "available": 10359,
           "annualised_return": "4.80",
           "term_remaining": 879000,
           "ltv": "48.80",

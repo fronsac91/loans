@@ -15,7 +15,7 @@ const initialState = {
 const computeUpdatedLoans = (state, action) => {
   const loanToBeUpdated = state.loans.filter(loan => loan.id === action.loanId)[0];
 
-  const updatedAvailable = loanToBeUpdated.available + action.amount;
+  const updatedAvailable = loanToBeUpdated.available - action.amount;
   const updatedLoan = updateObject(loanToBeUpdated, { available: updatedAvailable });
 
   const untouchedLoans = state.loans.filter(loan => loan.id !== action.loanId);
