@@ -6,7 +6,7 @@ import { originalLoansData } from '../../data';
 
 const loans = normalizeLoansData(originalLoansData);
 
-describe('LendInvest reducer', () => {
+describe('Apartment loans reducer', () => {
   let initialState;
 
   beforeEach(() => {

@@ -8,7 +8,7 @@ import App from './App';
 
 configure({ adapter: new Adapter() });
 
-describe("LendInvest loans <App/>", () => {
+describe("Apartment loans <App/>", () => {
   it("should display balance info", () => {
     const wrapper = mount(<App />);
     expect(wrapper.find('p[data-testid="balance"]').text()).toEqual(
